@@ -34,7 +34,7 @@ body.dark-theme .open .question-box {
   line-height: 28px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--light-accent);
   transition: background-color var(--animation-mode);
 }
 

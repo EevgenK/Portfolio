@@ -7,10 +7,6 @@
 }
 
 .header {
-  /* position: fixed;
-  z-index: 3;
-  left: 15%; */
-  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   /* padding: 36px 32px; */
@@ -132,6 +128,7 @@
 }
 
 /* MODAL */
+
 .header-modal {
   display: none;
   width: 360px;
