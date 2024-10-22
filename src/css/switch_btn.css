@@ -67,7 +67,7 @@ body.dark-theme .contact-form-btn {
 }
 body.dark-theme .contact-form-btn:hover,
 .contact-form-btn:focus {
-  background-color: var(--hover);
+  background-color: var(--accet-color);
 }
 body.dark-theme .modal {
   background-color: var(--charcoal-dt);
@@ -79,5 +79,7 @@ body.dark-theme .header-modal-svg {
 body.dark-theme .header-modal {
   background-color: var(--black);
 }
-
+body.dark-theme .swiper-slide {
+  background-color: var(--charcoal-dt);
+}
 /* check */

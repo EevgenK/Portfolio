@@ -2,7 +2,7 @@
 }
 
 .text-split {
-  color: #00b068;
+  color: var(--accet-color);
 }
 
 .about-content {
