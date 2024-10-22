@@ -58,6 +58,8 @@
   background-color: var(--hover-grey);
 }
 .contacts-icon {
+  stroke: blue;
+  fill: blue;
   transition: transform var(--animation-mode);
 }
 .projects-link:hover .contacts-icon,

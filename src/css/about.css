@@ -127,13 +127,6 @@
     letter-spacing: 0.01em;
   }
 
-  .about-container {
-    background-image: url(../img/about-bg-table.png);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: right;
-  }
-
   .about-secondpart-list {
     display: flex;
     gap: 32px;
@@ -141,9 +134,10 @@
   }
 
   .about-container {
-    background-image: url(../img/about-bg-table.png);
+    background-image: url(../img/about-bg-tablet.png);
     background-repeat: no-repeat;
-    background-position: right bottom 156px;
+    background-size: 400px;
+    background-position: right bottom 100px;
   }
 
   .about-secondpart-list-item:first-child {
@@ -159,7 +153,7 @@
   .about-container {
     background-image: url(../img/about-bg-desc.png);
     background-repeat: no-repeat;
-    background-position: right bottom 264px;
+    background-position: right 100px bottom 150px;
   }
   .about-title {
     font-size: 108px;

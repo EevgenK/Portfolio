@@ -36,7 +36,8 @@
 }
 
 .benefits-icon {
-  background-color: #bcdfd1;
+  stroke: var(--accet-color);
+  background-color: var(--light-accent);
   border-radius: 8px;
   padding: 12px;
 }
@@ -88,12 +89,6 @@
     flex-direction: column;
     gap: 16px;
     width: 300px;
-  }
-
-  .benefits-icon {
-    background-color: #bcdfd1;
-    border-radius: 8px;
-    padding: 12px;
   }
 
   .benefits-item-head {
@@ -168,7 +163,7 @@
     grid-template-columns: 1, 3fr;
     background-image: url(../img/benefits-bg-desc.png);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right 32px top;
   }
 
   .benefits-header {

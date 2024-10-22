@@ -12,12 +12,12 @@ refs.navLinks.forEach(link => link.addEventListener('click', closeMenu));
 
 function toggleMenu() {
   refs.modal.classList.toggle('is-visible');
-  body.classList.add('body-hidden');
+  body.classList.add('modal-open');
 }
 
-function closeMenu(e) {
+function closeMenu() {
   {
     refs.modal.classList.remove('is-visible');
-    body.classList.remove('body-hidden');
+    body.classList.remove('modal-open');
   }
 }

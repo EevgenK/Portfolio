@@ -17,6 +17,7 @@ const createModalFunctions = () => {
       toggleModal();
       window.removeEventListener('keydown', closeModal);
     }
+    document.body.classList.remove('modal-open');
   };
 
   window.addEventListener('keydown', closeModal);
@@ -25,31 +26,32 @@ const createModalFunctions = () => {
 };
 
 const onSbmit = e => {
-	e.preventDefault();
-	const {
-		email: { value: email },
-		comment: { value: comment },
-	} = e.target;
-	if (comment.trim() === '') {
-		errorMessege({
-			title: 'Not enough information.',
-			message: 'Please fill in the "message" field.',
-		});
-	} else {
-		createContact(email, comment)
-			.then(({ data: { title, message } }) => {
-				createModal(refs.backDrop, title, message);
-				createModalFunctions();
-				e.target.reset();
-				refs.checkedIcon.classList.add('is-hidden');
-			})
-			.catch(error => {
-				errorMessege({
-					title: 'Network response was not ok!',
-					message: 'Please try again later.',
-				});
-			});
-	}
+  e.preventDefault();
+  const {
+    email: { value: email },
+    comment: { value: comment },
+  } = e.target;
+  if (comment.trim() === '') {
+    errorMessege({
+      title: 'Not enough information.',
+      message: 'Please fill in the "message" field.',
+    });
+  } else {
+    createContact(email, comment)
+      .then(({ data: { title, message } }) => {
+        createModal(refs.backDrop, title, message);
+        document.body.classList.add('modal-open');
+        createModalFunctions();
+        e.target.reset();
+        refs.checkedIcon.classList.add('is-hidden');
+      })
+      .catch(error => {
+        errorMessege({
+          title: 'Network response was not ok!',
+          message: 'Please try again later.',
+        });
+      });
+  }
 };
 
 const chekValidity = debounce(e => {

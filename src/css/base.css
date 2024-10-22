@@ -37,7 +37,9 @@ body {
   font-family: var(--font-family);
   background-color: var(--white);
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .container {
   min-width: 320px;
   margin-left: auto;
