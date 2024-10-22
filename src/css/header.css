@@ -12,7 +12,7 @@
   left: 15%; */
   position: relative;
   padding-top: 20px;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
   /* padding: 36px 32px; */
   background-color: var(--white);
   display: flex;
@@ -49,7 +49,7 @@
 .nav {
   display: flex;
   align-items: center;
-  /* gap: 108px; */
+
   justify-content: space-between;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .nav-link-span {
-  color: var(--accet-green);
+  color: var(--accet-color);
 }
 
 .menu-icon-btn {
@@ -91,7 +91,7 @@
   position: relative;
   padding: 2px;
   border-radius: 16px;
-  width: 48px;
+  width: 28px;
   height: 24px;
   display: flex;
   align-items: center;
@@ -103,11 +103,11 @@
 .active-btn {
   background-color: #333;
   .btn-detail {
-    transform: translateX(120%);
+    transform: translateX(50%);
   }
 }
 .btn-detail {
-  background-color: #00b068;
+  background-color: var(--accet-color);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -176,7 +176,7 @@
 }
 
 .modal-link-span {
-  color: var(--accet-green);
+  color: var(--accet-color);
 }
 
 .modal-header-list {
@@ -201,7 +201,7 @@
 .modal-list-item:hover,
 .modal-list-item:active,
 .modal-list-item:focus {
-  color: var(--accet-green);
+  color: var(--accet-color);
 }
 
 .header-modal-btn {
@@ -213,19 +213,34 @@
 }
 
 .header-modal-svg {
-  stroke: #292929;
+  stroke: var(--black);
+  transition: stroke var(--animarion-mode);
+}
+.header-modal-btn:hover .header-modal-svg,
+.header-modal-btn:focus .header-modal-svg {
+  stroke: var(--accet-color);
 }
 
 /* MEDIA */
 
 @media screen and (min-width: 360px) {
+  .btn-toogle {
+    width: 48px;
+  }
+  .active-btn.btn-toogle::before {
+    top: 50%;
+    right: 50%;
+    transform: translate(70%, -50%);
+  }
+  .active-btn {
+    background-color: #333;
+    .btn-detail {
+      transform: translateX(120%);
+    }
+  }
   .header {
-    width: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    gap: 166px;
   }
 
   .header-list {
@@ -247,7 +262,7 @@
 .header-item-link:hover,
 .header-item-link:active,
 .header-item-link:focus {
-  color: var(--accet-green);
+  color: var(--accet-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -260,9 +275,6 @@
     line-height: 1;
     letter-spacing: 0.05em;
   }
-  /* .header-modal {
-        display: none;
-    } */
 
   .menu-icon {
     display: none;
@@ -289,7 +301,6 @@
   .header {
     width: 1280px;
     padding: 36px 32px;
-    /* gap: 437px; */
   }
   .btn-toogle {
     margin-left: auto;
@@ -298,7 +309,6 @@
   .nav-link {
     font-size: 32px;
     letter-spacing: 0.05em;
-    /* padding-right: 437px; */
   }
 
   .menu-icon {

@@ -19,7 +19,7 @@
   text-wrap: wrap;
 }
 .benefits-header span {
-  color: #00b068;
+  color: var(--accet-color);
 }
 
 .benefits-list-wrap {
@@ -61,7 +61,6 @@
 }
 
 @media (min-width: 360px) {
-
   .benefits-header {
     display: block;
     max-width: 320px;
@@ -75,7 +74,7 @@
     margin-bottom: 40px;
   }
   .benefits-header span {
-    color: #00b068;
+    color: var(--accet-color);
   }
 
   .benefits-list-wrap {
@@ -165,14 +164,12 @@
 }
 
 @media (min-width: 1280px) {
-
   .benefits {
     grid-template-columns: 1, 3fr;
     background-image: url(../img/benefits-bg-desc.png);
     background-repeat: no-repeat;
     background-position: right top;
   }
-
 
   .benefits-header {
   }

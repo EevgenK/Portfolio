@@ -9,7 +9,7 @@ body.dark-theme {
   background-color: var(--black);
 }
 body.dark-theme .hero-link-project::before {
-  background-color: var(--accet-green-dt);
+  background-color: var(--accet-color-dt);
 }
 
 body.dark-theme .hero-social {
@@ -25,7 +25,7 @@ body.dark-theme .nav-link {
   color: var(--white);
 }
 body.dark-theme .header-item-link:hover,
-.header-item-link:focus {
+body.dark-theme .header-item-link:focus {
   color: var(--hover);
 }
 
@@ -63,7 +63,7 @@ body.dark-theme .form-input {
   background-color: var(--charcoal-dt);
 }
 body.dark-theme .contact-form-btn {
-  background-color: var(--accet-green-dt);
+  background-color: var(--accet-color-dt);
 }
 body.dark-theme .contact-form-btn:hover,
 .contact-form-btn:focus {
