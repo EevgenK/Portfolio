@@ -21,6 +21,7 @@
     "accordion-js": "^3.3.4",
     "axios": "^1.7.7",
     "izitoast": "^1.4.0",
+    "nanoid": "^5.0.8",
     "normalize.css": "^8.0.1",
     "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.2.0",

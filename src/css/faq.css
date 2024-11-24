@@ -2,7 +2,10 @@
 body.dark-theme .open .question-box {
   border-bottom: none;
 }
-
+.faq-link {
+  color: var(--accet-color);
+  cursor: pointer;
+}
 .faq-title {
   margin-bottom: 40px;
 }

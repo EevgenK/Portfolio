@@ -6,38 +6,32 @@
 
     <div class="about-content">
       <div class="about-firstpart">
-        <picture class="about-picture">
-          <source
-            srcset="
-              ./img/about-img-mob-1x.jpg 1x,
-              ./img/about-img-mob-2x.jpg 2x
-            "
-            media="(max-width:767px)"
-            type="image/jpg"
-          />
-          <source
-            srcset="
-              ./img/about-img-tab-1x.jpg 1x,
-              ./img/about-img-tab-2x.jpg 2x
-            "
-            media="(max-width:1279px)"
-            type="image/jpg"
-          />
-          <source
-            srcset="./img/about-img-1x.jpg 1x, ./img/about-img-2x.jpg 2x"
-            media="(min-width:1280px)"
-            type="image/jpg"
-          />
+        <div class="picture-wrap">
+          <picture class="about-picture">
+            <source
+              srcset="./img/about-img-mob.png 1x, ./img/about-img-mob2x.png 2x"
+              media="(max-width:767px)"
+              type="image/png"
+            />
+            <source
+              srcset="./img/about-tablet.png 1x, ./img/about-tablet2x.png 2x"
+              media="(max-width:1279px)"
+              type="image/jpg"
+            />
+            <source
+              srcset="./img/about.png 1x, ./img/about2x.png 2x"
+              media="(min-width:1280px)"
+              type="image/jpg"
+            />
 
-          <img
-            class="about-img"
-            src="./img/about-img-mob-1x.jpg"
-            alt="Lloyd Jefferson"
-            width="320"
-            height="374"
-            loading="lazy"
-          />
-        </picture>
+            <img
+              class="about-img"
+              src="./img/about-img-mob.png"
+              alt="Evgen Kulbachenko"
+              loading="lazy"
+            />
+          </picture>
+        </div>
 
         <div class="about-summary">
           <h3 class="about-subtitle">BIO</h3>

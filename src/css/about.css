@@ -11,7 +11,10 @@
 .about-firstpart {
   margin-bottom: 40px;
 }
-
+.picture-wrap {
+  background-color: var(--accet-color-dt);
+  border-radius: 10px;
+}
 .about-picture {
   width: 330px;
   height: 374px;
@@ -107,7 +110,6 @@
   }
 
   .about-img {
-    width: 336px;
     margin-bottom: 0;
   }
 
@@ -158,9 +160,10 @@
   .about-title {
     font-size: 108px;
   }
+
   .about-picture {
-    width: 384px;
-    height: 448px;
+    display: flex;
+    align-items: flex-end;
     margin-top: 312px;
     margin-right: 136px;
   }
@@ -169,10 +172,13 @@
     margin-left: 208px;
     margin-bottom: 80px;
   }
-
-  .about-img {
+  .picture-wrap {
+    text-align: center;
     width: 384px;
-    display: block;
+  }
+  .about-img {
+    width: 380px;
+    height: 640px;
   }
 
   .about-summary {

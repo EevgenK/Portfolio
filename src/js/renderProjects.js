@@ -19,59 +19,60 @@ import imgNine from '../img/pj-9-min.jpg';
 import imgNineX from '../img/pj-9@2x-min.jpg';
 import imgTen from '../img/pj-10-min.jpg';
 import imgTenX from '../img/pj-10@2x-min.jpg';
+import { nanoid } from 'nanoid';
 const refs = {
   projectsList: document.querySelector('.projects-list'),
 };
 
 export const fullProjects = [
-  {
-    id: 1,
-    title: 'power pulse webservice',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgFirst,
-    srcset: imgFirstX,
-  },
-  {
-    id: 2,
-    title: 'mimino website',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgSecond,
-    srcset: imgSecondX,
-  },
-  {
-    id: 3,
-    title: 'vyshyvanka vibes Landing Page',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgThird,
-    srcset: imgThirdX,
-  },
-  {
-    id: 4,
-    title: 'green harvest online store',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgFour,
-    srcset: imgFourX,
-  },
-  {
-    id: 5,
-    title: 'wallet webservice ',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgFive,
-    srcset: imgFiveX,
-  },
-  {
-    id: 6,
-    title: 'chego jewelry website',
-    stacks: 'React, JavaScript, Node JS, Git',
-    link: 'https://github.com/Evhenii18/Our-group-js-project',
-    src: imgSix,
-    srcset: imgSixX,
-  },
+  // {
+  //   id: 1,
+  //   title: 'power pulse webservice',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgTen,
+  //   srcset: imgTenX,
+  // },
+  // {
+  //   id: 2,
+  //   title: 'mimino website',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgSecond,
+  //   srcset: imgSecondX,
+  // },
+  // {
+  //   id: 3,
+  //   title: 'vyshyvanka vibes Landing Page',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgThird,
+  //   srcset: imgThirdX,
+  // },
+  // {
+  //   id: 4,
+  //   title: 'green harvest online store',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgFour,
+  //   srcset: imgFourX,
+  // },
+  // {
+  //   id: 5,
+  //   title: 'wallet webservice ',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgFive,
+  //   srcset: imgFiveX,
+  // },
+  // {
+  //   id: 6,
+  //   title: 'chego jewelry website',
+  //   stacks: 'React, JavaScript, Node JS, Git',
+  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
+  //   src: imgSix,
+  //   srcset: imgSixX,
+  // },
   {
     id: 7,
     title: 'energy flow webservice ',

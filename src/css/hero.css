@@ -160,7 +160,12 @@
   .hero-container {
     width: 1280px;
   }
+  .hero-pic {
+    width: 400px;
+  }
   .hero-container-img {
+    background-color: var(--accet-color-dt);
+
     width: 592px;
     height: 444px;
     overflow: hidden;
@@ -172,7 +177,7 @@
     display: flex;
     position: relative;
     z-index: 2;
-
+    justify-content: center;
     width: 100%;
     height: auto;
     object-fit: cover;

@@ -1,7 +1,10 @@
 reviews-containet {
   margin-bottom: 80px;
 }
-
+/*TEMPORARY HIDDEN*/
+.rewiews-container {
+  display: none;
+}
 .swiper {
   margin-top: 40px;
 }
