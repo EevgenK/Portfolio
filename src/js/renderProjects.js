@@ -26,6 +26,14 @@ const refs = {
 
 export const fullProjects = [
   {
+    id: 5,
+    title: 'Phone book organizer',
+    stacks: 'Html, СSS, React, Redux, JSON Web Token (JWT), Material UI',
+    link: 'https://organizer-black.vercel.app/',
+    src: imgFive,
+    srcset: imgFiveX,
+  },
+  {
     id: 4,
     title: 'movies-overviews, service for search movies and their overviews',
     stacks: 'React, JavaScript, CSS, Git',
@@ -57,14 +65,7 @@ export const fullProjects = [
     src: imgFirst,
     srcset: imgFirstX,
   },
-  // {
-  //   id: 5,
-  //   title: 'wallet webservice ',
-  //   stacks: 'React, JavaScript, Node JS, Git',
-  //   link: 'https://github.com/Evhenii18/Our-group-js-project',
-  //   src: imgFive,
-  //   srcset: imgFiveX,
-  // },
+
   // {
   //   id: 6,
   //   title: 'chego jewelry website',
